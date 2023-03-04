@@ -1,0 +1,200 @@
+.home
+   padding: 40px
+   background: rgba(30, 32, 39, 0.7)
+   border: 1px solid rgba(207, 123, 90, 0.2)
+   border-radius: 40px
+   height: 100%
+   display: flex
+   flex-direction: column
+   gap: 24px
+   &Wrapper
+      padding: 32px
+.users
+   &Wrapper
+      background: #13161D
+      border-radius: 16px
+      padding: 0 12px
+.filters
+   display: flex
+   gap: 8px
+.table
+   display: flex
+   flex-direction: column
+   height: 604px
+   &Col1
+      width: 25%!important
+   &Col2
+      width: 15%!important
+   &Col3
+      min-width: 247px!important
+   &Col4
+      width: 12%!important
+   &Col5
+      width: 8%!important
+   &Col6
+      width: 8%!important
+   &Body
+      display: flex
+      flex-direction: column
+      gap: 8px
+   & tbody
+      display: flex
+      height: 511px
+      padding-right: 7px
+      & tr
+         width: 100%
+   &Header th,
+   &Body td
+      width: calc(100% / 7)
+      text-align: left
+   &Header
+      font-weight: 400
+      font-size: 14px
+      line-height: 16px
+      color: #8C8988
+      height: 53px
+      display: flex
+      align-items: center
+      & th
+         &:first-child
+            padding-left: 17px
+         &:last-child
+            padding-right: 17px
+   &Row
+      background: #181B22
+      border: 1px solid rgba(207, 123, 90, 0.2)
+      border-radius: 12px
+      box-sizing: border-box
+      font-weight: 600
+      font-size: 14px
+      line-height: 18px
+      color: #DCD8D3
+      display: flex
+      & td
+         padding: 15px 0
+         display: flex
+         gap: 13px
+         align-items: center
+         &:first-child
+            padding-left: 17px
+         &:last-child
+            padding-right: 17px
+         & .image
+            border-radius: 40px
+            height: 34px
+            width: 34px
+            border: 1px solid rgba(207, 123, 90)
+.bottom
+   position: relative
+   margin-top: 10px
+.quantityUsers
+   position: absolute
+   right: 0
+   top: 0
+   display: flex
+   gap: 16px
+   &Text
+      display: flex
+      align-items: center
+      color: #dcd8d3
+   &Selected
+      background: #13161D
+      border-radius: 16px
+      width: 80px
+      height: 40px
+      display: flex
+      justify-content: spaceAround
+      align-items: center
+      padding: 0 16px
+      position: relative
+      cursor: pointer
+      &Number
+         font-weight: 500
+         font-size: 16px
+         line-height: 24px
+         color: #DCD8D3
+   &DownArrow
+      width: 24px
+      height: 24px
+   &UpArrow
+      transform: rotate(180deg)
+
+.turnPages
+   display: flex
+   justify-content: center
+   gap: 21px
+
+   &Arrow
+      background: #181B22
+      opacity: 0.5
+      border: 1px solid #303238
+      box-shadow: inset 0px 4px 12px -4px rgba(121, 118, 117, 0.7)
+      border-radius: 40px
+      width: 36px
+      height: 36px
+      position: relative
+      cursor: pointer
+      &[disabled]
+         cursor: default
+
+   &LeftArrow,
+   &RightArrow
+      position: absolute
+      top: 50%
+      left: 50%
+
+   &LeftArrow
+      transform: rotate(90deg) translate(-50%,50%)
+
+   &RightArrow
+      transform: rotate(-90deg) translate(50%,-50%)
+
+   &Text
+      display: flex
+      align-items: center
+
+@media only screen and (max-width: 1140px)
+   .table
+      &Col1
+         width: 21%!important
+      &Col2
+         width: 12%!important
+      &Col3
+         min-width: 200px!important
+      &Col4
+         width: 10%!important
+      &Col5
+         width: 8%!important
+      &Col6
+         width: 7%!important
+      &Row
+         font-size: 13px
+         line-height: 16px
+         & td
+            padding: 10px 0
+            &:first-child
+               padding-left: 12px
+            &:last-child
+               padding-right: 12px
+      &Header
+         font-size: 13px
+@media only screen and (max-width: 959px)
+   .table
+      overflow-x: scroll
+      & tbody,
+      &Header
+         width: 800px
+      &Col1
+         width: 180px!important
+      &Col2
+         width: 12%!important
+      &Col3
+         min-width: 200px!important
+      &Col4
+         width: 10%!important
+      &Col5
+         width: 8%!important
+      &Col6
+         width: 7%!important
+   .bottom
+      display: flex

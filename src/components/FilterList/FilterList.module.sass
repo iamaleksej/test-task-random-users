@@ -1,0 +1,38 @@
+.filterList
+   position: absolute
+   background: rgba(32, 33, 40, 0.5)
+   border: 1px solid rgba(207, 123, 90, 0.1)
+   box-shadow: inset 0px 4px 12px -4px rgba(207, 123, 90, 0.24)
+   backdrop-filter: blur(10px)
+   border-radius: 16px
+   width: 94px
+   max-height: 300px
+   padding: 10px 10px 10px 0
+   &Wrap
+      max-height: 280px
+   &Item
+      font-weight: 600
+      font-size: 14px
+      line-height: 20px
+      display: flex
+      align-items: center
+      color: #DCD8D3
+      cursor: pointer
+      margin: 8px
+      padding: 10px 16px
+
+      &.active
+         color: #CF7B5A
+         position: relative
+         &:after
+            content: ''
+            position: absolute
+            bottom: 0
+            background: #797675
+            height: 1px
+            width: 50%
+            opacity: 0.5
+      &:hover
+         background: #13161D
+         border-radius: 16px
+         color: rgba(207, 123, 90, 0.5)
